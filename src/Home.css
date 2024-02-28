@@ -1,0 +1,173 @@
+.HomeBackground-STYLE
+{
+    position: relative; /* Make the parent container a positioning context */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto; /* Or set it to a fixed value as needed */
+    padding-top: 1.5vw;
+    
+}
+
+.HomeContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 97vh;
+   
+}
+
+
+.Line-STYLE
+{
+    position: absolute; 
+    top: 80%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: auto;
+    margin-left: -57.1vh;
+   
+}
+.Line1-STYLE
+{
+    position: absolute; 
+    top: 20%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vh;
+    height: auto;
+    margin-right: -57.1vh;
+   
+}
+
+.Ellipse-STYLE
+{
+    position: absolute; 
+    top: 80%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6vh;
+    height: auto;
+    margin-right:-29vh;
+}
+
+.Ellipse1-STYLE
+{
+    position: absolute; 
+    top: 80%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6vh;
+    height: auto;
+    margin-right:-37.5vh;
+}
+
+.Ellipse2-STYLE
+{
+    position: absolute; 
+    top: 84.25%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.6vh;
+    height: auto;
+    margin-right:-29vh;
+}
+
+.NameLabel
+{
+    position: absolute; 
+    top: 77%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 3.8vh;
+    margin-left: -100vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+}
+
+
+.ChoiceLabel {
+    position: absolute; 
+    top: 33%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 15vh;
+    margin-left: -69vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.ChoiceLabel1
+{
+    position: absolute; 
+    top: 67%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 15vh;
+    margin-right: -60vh;
+    font-weight: bold;
+    letter-spacing: 0.1vh;
+    transition: transform 0.3s ease; 
+}
+
+.Separator-STYLE
+{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44vh;
+    width: auto;
+    transition: transform 0.3s ease; 
+}
+
+
+
+
+.ChoiceLabel:hover {
+    transform: translateY(-40%) scale(1.25);
+}
+
+.ChoiceLabel1:hover {
+    transform: translateY(-59%) scale(1.25);
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../public/fonts/Arame-Mono.ttf') format('truetype');
+  }
+  
+ 
