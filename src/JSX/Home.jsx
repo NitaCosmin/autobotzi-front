@@ -4,6 +4,7 @@ import HomeBackground from '../Imagini/HomeBackground.png';
 import Separator from '../Imagini/Separator.png';
 import Line from '../Imagini/Line.png';
 import Ellipse from '../Imagini/Ellipse.png';
+import {Link } from "react-router-dom";
 
 
 
@@ -23,7 +24,10 @@ const Home = () => {
           <img src={Ellipse} alt="" className="Ellipse2-STYLE" />
           <div className="NameLabel">Team Finder</div>
           <div className="ChoiceLabel">Login</div>
-          <div className="ChoiceLabel1">SignUp</div>
+          <Link to="/signup" >
+          <div className="ChoiceLabel1">SignUp</div>  
+          </Link>
+          
           </div>
   
          
