@@ -29,9 +29,16 @@
     position: absolute; 
     height: 27vw;
     width: auto;
+    transition: transform 0.3s ease; 
+
 }
 
-
+.ChoiceLabel:hover ~ .Separator-STYLE {    
+    transform: translateX(10%);
+}
+ .ChoiceLabel1:hover ~ .Separator-STYLE {    
+    transform: translateX(-10%);
+}
 
 .Line-STYLE {
     position: absolute; 

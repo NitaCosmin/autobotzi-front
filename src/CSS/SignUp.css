@@ -5,6 +5,10 @@
     height: 97vh;
     position: relative; 
 }
+.NameLabel-SingUp
+{
+    user-select: none;
+}
 
 .HomeBackground-STYLE-SingUp {
     width: 80%;

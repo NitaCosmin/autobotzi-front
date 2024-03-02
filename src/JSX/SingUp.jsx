@@ -22,11 +22,11 @@ const SignUp = () => {
           <img src={Ellipse} alt="" className="Ellipse2-STYLE-SingUp" />
           <div className="NameLabel-SingUp">Team Finder</div>
           <div className="ChoiceLabel-SingUp">Sign/Up</div>
-          <button type="button" class="button-SignUp">Submit</button>
+          <button type="submit" class="button-SignUp">Submit</button>
           <div className="Collumn-Input-SingUp">
-          <input type="text" className="textbox-SingUp" id="name" name="name" placeholder="Name" />
-          <input type="text" className="textbox-SingUp" id="email" name="email" placeholder="E mail" />
-          <input type="text" className="textbox-SingUp" id="password" name="password" placeholder="Passw*rd" />
+          <input type="text" className="textbox-SingUp" id="name" name="name" placeholder="Name" required/>
+          <input type="email" className="textbox-SingUp" id="email" name="email" placeholder="E mail" required/>
+          <input type="password" className="textbox-SingUp" id="password" name="password" placeholder="Password" required/>
           <input type="text" className="textbox-SingUp" id="org_name" name="org_name" placeholder="Organization Name" />
           <input type="text" className="textbox-SingUp" id="HQadress" name="HQadress" placeholder="HeadQuarter Adress" />
           </div>
