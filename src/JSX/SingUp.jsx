@@ -1,10 +1,10 @@
 import React from "react";
 import "../CSS/SignUp.css";
 import HomeBackground from '../Imagini/HomeBackground.png';
-import Separator from '../Imagini/Separator.png';
+
 import Line from '../Imagini/Line.png';
 import Ellipse from '../Imagini/Ellipse.png';
-
+import Ring from '../Imagini/Ring.png';
 
 
 const SignUp = () => {
@@ -27,8 +27,7 @@ const SignUp = () => {
           <input type="text" className="textbox-SingUp" id="name" name="name" placeholder="Name" required/>
           <input type="email" className="textbox-SingUp" id="email" name="email" placeholder="E mail" required/>
           <input type="password" className="textbox-SingUp" id="password" name="password" placeholder="Password" required/>
-          <input type="text" className="textbox-SingUp" id="org_name" name="org_name" placeholder="Organization Name" />
-          <input type="text" className="textbox-SingUp" id="HQadress" name="HQadress" placeholder="HeadQuarter Adress" />
+          
           </div>
           </div>
   

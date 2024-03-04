@@ -10,34 +10,7 @@ import {Link } from "react-router-dom";
 
 const Home = () => {
   
-  useEffect(() => {
-    const choiceLabel1 = document.querySelector(".ChoiceLabel1");
-    const choiceLabel = document.querySelector(".ChoiceLabel");
-    const separatorStyle = document.querySelector(".Separator-STYLE");
-
-    const handleMouseEnter = () => {
-        separatorStyle.style.transform = "translateX(-10%)";
-        choiceLabel.style.transform = 'scale(0.9)';
-
-    };
-
-    const handleMouseLeave = () => {
-        separatorStyle.style.transform = "none";
-        choiceLabel.style.transform = 'none';
-
-    };
-    choiceLabel.addEventListener("mouseenter", handleMouseEnter);
-    choiceLabel.addEventListener("mouseleave", handleMouseLeave);
-    choiceLabel1.addEventListener("mouseenter", handleMouseEnter);
-    choiceLabel1.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-        choiceLabel.removeEventListener("mouseenter", handleMouseEnter);
-        choiceLabel.removeEventListener("mouseleave", handleMouseLeave);
-        choiceLabel1.removeEventListener("mouseenter", handleMouseEnter);
-        choiceLabel1.removeEventListener("mouseleave", handleMouseLeave);
-    };
-}, []);
+ 
   return (  
   
     <div className="HomeContainer">

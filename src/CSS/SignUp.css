@@ -11,7 +11,7 @@
 }
 
 .HomeBackground-STYLE-SingUp {
-    width: 80%;
+    width: 80vw;
     height: auto; 
     padding-top: 1.5vw;
     z-index: 0;
@@ -60,6 +60,7 @@
     width: 2.2vw;
     height: auto;
     right: -8.5vw;
+  
     
 }
 
@@ -84,10 +85,10 @@
 .NameLabel-SingUp
 {
     position: absolute; 
-    top: 18vw; 
+    top: -22.5vw; 
     color: white;
     font-family: 'Arame-Mono', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2.1vw;
     font-weight: bold;
     left: -37vw;
     letter-spacing: 0.08vw;
@@ -97,7 +98,7 @@
 .ChoiceLabel-SingUp {
     position: absolute; 
     top: -23.72vw; 
-    right: -35vw;
+    right: -37vw;
     color: white;
     font-family: 'Arame-Mono', sans-serif;
     font-size: 6.5vw;
@@ -134,7 +135,7 @@
 .Collumn-Input-SingUp {
     position: absolute; 
     z-index: 2;
-    top:-12vw;
+    top:-6vw;
     width: 40vw;
     height: auto;
     display: flex;
@@ -145,17 +146,17 @@
 
 .button-SignUp{
     position: absolute; 
-    top: 19.3vw; 
-    width:13vw;
-    height:4vw;
-    color: white;
+    top: 19vw; 
+    width:15vw;
+    height:4.5vw;
+    color: black;
     font-family: 'Arame-Mono', sans-serif;
     font-size: 2vw;
-    font-weight: bold;
-    right : -32vw;
+    right : -33vw;
     letter-spacing: 0.08vw;
-    background-color: #0991aa;
-    border:0.1vw solid white ;
+    background-color:#FFD600;
+    border:0.1vw solid #b98a00;
+    border-radius: 1.5vw;
 }
 
 @font-face {
