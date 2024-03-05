@@ -1,16 +1,16 @@
-.HomeContainer-SingUp {
+.HomeContainer-Login {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 97vh;
     position: relative; 
 }
-.NameLabel-SingUp
+.NameLabel-Login
 {
     user-select: none;
 }
 
-.HomeBackground-STYLE-SingUp {
+.HomeBackground-STYLE-Login {
     width: 60vw;
     height: auto; 
     padding-top: 1.5vw;
@@ -18,7 +18,7 @@
     margin: 0 auto; 
 }
 
-.HomeContent-SingUp{
+.HomeContent-Login{
     position: absolute; 
     top: 50%; 
     transform: translateY(-50%); 
@@ -31,17 +31,17 @@
 
 
 
-.Line-STYLE-SingUp {
+.Line-STYLE-Login {
     position: absolute; 
     top: -15vw; 
-    right:-3.75vw; 
+    left:-3.75vw; 
     z-index: 2;
     width: 33.75vw;
     height: auto;
 }
 
 
-.Line1-STYLE-SingUp
+.Line1-STYLE-Login
 {
 
     position: absolute; 
@@ -53,7 +53,7 @@
    
 }
 
-.Ellipse-STYLE-SingUp
+.Ellipse-STYLE-Login
 {
     position:absolute;
     top: 15vw; 
@@ -64,7 +64,7 @@
     
 }
 
-.Ellipse1-STYLE-SingUp
+.Ellipse1-STYLE-Login
 {
     position:absolute;
     top: 15vw; 
@@ -73,7 +73,7 @@
     right: -8.4vw;
 }
 
-.Ellipse2-STYLE-SingUp
+.Ellipse2-STYLE-Login
 {
     position:absolute;
     top: 17.1vw; 
@@ -82,23 +82,59 @@
     right: -6.37vw;
 }
 
-.NameLabel-SingUp
+.NameLabel-Login
 {
     position: absolute; 
     top: -16.87vw; 
     color: white;
     font-family: 'Arame-Mono', sans-serif;
-    font-size: 1.72vw;
+    font-size: 1.6vw;
     font-weight: bold;
-    left: -27.75vw;
+    right: -27.75vw;
     letter-spacing: 0.08vw;
+}
+.NameLabel1-Login
+{
+    position: absolute; 
+    top: -14.5vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.9vw;
+    font-weight: bold;
+    right: -26vw;
+    letter-spacing: 0.08vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+
+.NameLabel-Resset-Login
+{
+    position: absolute; 
+    top: 14vw; 
+    color: white;
+    font-family: 'Arame-Mono', sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
+    left: -28vw;
+    letter-spacing: 0.08vw;
+    transition: transform 0.3s ease; 
+    transform-origin: center;
+}
+.NameLabel1-Login:hover
+{
+    transform: scale(1.18);
+}
+
+.NameLabel-Resset-Login:hover
+{
+    transform: scale(1.18);
 }
 
 
-.ChoiceLabel-SingUp {
+.ChoiceLabel-Login {
     position: absolute; 
     top: -17.79vw; 
-    right: -27.75vw;
+    left: -24.5vw;
     color: white;
     font-family: 'Arame-Mono', sans-serif;
     font-size: 4.87vw;
@@ -108,7 +144,7 @@
     transform-origin: center;
 }
 
-.textbox-SingUp
+.textbox-Login
 {
     width: 30vw;
     height: auto;
@@ -122,20 +158,20 @@
     
 }
 
-.textbox-SingUp::placeholder {
+.textbox-Login::placeholder {
     color: white; 
     text-align: center;
     font-family: Arame-Mono, sans-serif;
 
 }
-.textbox-SingUp:focus {
+.textbox-Login:focus {
     outline: none; /* Remove default focus outline */
 }
 
-.Collumn-Input-SingUp {
+.Collumn-Input-Login {
     position: absolute; 
     z-index: 2;
-    top:-4.5vw;
+    top:-2.5vw;
     width: 30vw;
     height: auto;
     display: flex;
@@ -144,7 +180,7 @@
     gap:2.25vw;
 }
 
-.button-SignUp{
+.button-Login{
     position: absolute; 
     top: 14.25vw; 
     width:11.25vw;

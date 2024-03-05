@@ -18,18 +18,18 @@ const Home = () => {
           <div className="HomeContent">
           <img src={Line} alt="" className="Line-STYLE" />
           <img src={Line} alt="" className="Line1-STYLE" /> 
+          <img src={Separator} alt="" className="Separator-STYLE" />
           <img src={Ellipse} alt="" className="Ellipse-STYLE" />
           <img src={Ellipse} alt="" className="Ellipse1-STYLE" />
           <img src={Ellipse} alt="" className="Ellipse2-STYLE" />
           <div className="NameLabel">Team Finder</div>
-          <Link to="/signup" >
+          <Link to="/login" >
           <div className="ChoiceLabel">Login</div>  
           </Link>
           <Link to="/signup" >
           <div className="ChoiceLabel1">SignUp</div>  
           </Link>
-          <img src={Separator} alt="" className="Separator-STYLE" />
-
+         
           
           </div>
   
