@@ -12,10 +12,32 @@ import RoboImg from '../Imagini/RoboImg.png';
 import CalendarBackground from '../Imagini/CalendarBackground.png';
 import AddBackground from '../Imagini/AddBackground.png';
 import SearchBackground from '../Imagini/SearchBackground.png';
+import SelectedImg from '../Imagini/SelectedImg.png';
+import { ListBox } from 'primereact/listbox';
 
 const Admin = () => {
   
     const [date, setDate] = useState(null);
+    const [selectedDep, setselectedDep] = useState(null);
+    const Departments = [
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        { name: 'Dep1', code: '1' },
+        
+        
+    ];
   return (  
   
     <div className="AdminContainer">
@@ -32,13 +54,19 @@ const Admin = () => {
 
 
         </div>
+        <img src={SelectedImg} alt="" className="Selection-Style" /> 
 
 
     </div>
     <div className="Spacework1">
         <img src={RoboImg} alt="" className="RoboImg-Style" /> 
         <img src={AddBackground} alt="" className="AddBackground-Style" />
-
+        <div className="Departments-Label">Departments</div>  
+        <div className="Filters-Label">Filers</div> 
+        <div className="Department-Filter">  
+            <ListBox value={selectedDep} onChange={(e) => setselectedDep(e.value)} options={Departments} optionLabel="name" 
+                className="w-full md:w-14rem p-invalid" />
+        </div>
     </div>
     <div className="Spacework2">
         
