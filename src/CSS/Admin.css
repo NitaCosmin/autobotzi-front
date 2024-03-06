@@ -43,6 +43,17 @@
     position: absolute;
     gap: 4vw;
 }
+.Selection-Style
+{
+    display:flex;
+    height: auto;
+    width: 8vw;
+    margin-left: 1.5vw;
+    margin-top: -34vw;
+    z-index: 2;
+    position: absolute;
+    gap: 4vw;
+}
 
 .MenuIcons
 {
@@ -176,4 +187,66 @@
     width: 30vw;
     height: 42.5vw;
     border-radius:2vw;
+}
+
+
+.Departments-Label{
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -52.8vw;
+    margin-left: -23vw;
+    font-family: 'Arame-Mono', sans-serif;
+    
+}
+.Filters-Label{
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -5.1vw;
+    margin-right: -32vw;
+    font-family: 'Arame-Mono', sans-serif;
+}
+
+.Department-Filter .p-listbox-list {
+    
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    flex-wrap: wrap;
+    border: 0.1vw solid black;
+    max-width: 42vw; /* Use max-width instead of width */
+    background-color: #D9D9D9;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 0.1vw;
+}
+
+.p-listbox-item {
+    font-size: 0.8vw;
+    border: 0.1vw solid black;
+    border-radius: 0.5vw;
+    flex: 1 0 5vw; 
+    min-width: 5vw; /* Minimum width for each item */
+    max-width: 5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.3vw; /* Add margin bottom for item spacing */
+    box-sizing: border-box; /* Ensure border and padding are included in the width */
+}
+
+.p-listbox-item:active,
+.Department-Filter .p-listbox-item:focus {
+    background-color: #ECFCFF;
+}
+
+.Department-Filter .p-listbox-item:focus {
+    background-color: grey;
+}
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
 }
