@@ -26,7 +26,9 @@ const Login = () => {
           <div className="NameLabel1-Login">Sign/Up</div>
           </Link>
           <div className="ChoiceLabel-Login">Login</div>
+          <Link to="/admin" >
           <button type="submit" class="button-Login">Continue</button>
+          </Link>
           <div className="Collumn-Input-Login">
           <input type="email" className="textbox-Login" id="email" name="email" placeholder="E mail" required/>
           <input type="password" className="textbox-Login" id="password" name="password" placeholder="Password" required/>

@@ -1,0 +1,179 @@
+.AdminContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    background-color: #ECFCFF;
+    margin-left: 1vw;
+    
+   
+}
+
+.MenuBar{
+    display: flex;
+    justify-content: flex start;
+    align-items: center;
+    width: 10vw;
+    height:70vw;
+    flex-direction: row;
+    position: relative;  
+
+}
+
+.MenuBar-Img
+{
+    height: 65vw;
+    width: 9vw;
+    margin-left: 0.5vw;
+    margin-top: 1vw;
+    z-index: 1;
+    position: relative;
+}
+.MenuOptions
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex start;
+    height: 52vw;
+    width: 7.3vw;
+    margin-left: 1.2vw;
+    margin-top: -5vw;
+    z-index: 3;
+    position: absolute;
+    gap: 4vw;
+}
+
+.MenuIcons
+{
+    width: 4vw;
+    height: auto;
+}
+
+
+.Spacework1{
+    display: flex;
+    justify-content: flex start;
+    align-items: center;
+    width: 48vw;
+    height:70vw;
+    flex-direction: column;
+    gap:3vw;
+   
+    
+}
+
+.Spacework2
+{
+    position: relative;
+    display: flex;
+    justify-content: flex start;
+    align-items: center;
+    width: 32vw;
+    height:70vw;
+    flex-direction: column;
+    gap:3vw;
+}
+
+
+.RoboImg-Style{
+    width: 44vw;
+    height: auto;
+    margin-top: 2.2vw ;
+    border-radius:2vw;
+}
+
+.AddBackground-Style
+{
+    width: 44vw;
+    height: 50vw;
+    border-radius:2vw;
+}
+
+
+
+
+.CalendarBackground-Style{
+    margin-top: 2.7vw ;
+    width: 30vw;
+    height: 20vw;
+    border-radius:3vw;
+    z-index: 1;
+    position: relative;
+}
+.Calendar
+{
+    z-index: 2;
+    position: absolute;
+    margin-top: 5vw;
+    width: 30vw;
+    height: 15vw;
+    font-size: 1.2vw;
+    color: white;
+    
+    
+    
+}
+
+.Calendar .p-calendar {
+    width: 100% !important;
+    height: auto !important; 
+}
+
+
+.Calendar .p-calendar .p-calendar-container {
+    width: 100% !important; 
+    height: auto !important;
+}
+
+.Calendar .p-calendar .p-datepicker tbody .p-datepicker-today {
+    background-color: #FFD600; /* Background color for the current date cell */
+    border-radius: 0.5vw; 
+    color: gray;/* Border radius for rounded corners */
+}
+
+.Calendar .p-calendar .p-datepicker td.p-datepicker-other-month {
+    color: Gray; /* Set the background color for days before the first day of the current month */
+}
+/* Hide the "Wk" column header */
+.Calendar .p-calendar .p-datepicker th:nth-child(1) {
+    display: none;
+}
+
+/* Hide the "Wk" column data cells */
+.Calendar .p-calendar .p-datepicker td:nth-child(8n+1) {
+    display: none;
+}
+
+/* Adjust the font size of the month and year in the calendar header */
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-month {
+    font-size: 1.3vw;
+    color: white;
+}
+
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-year {
+    font-size: 1.3vw; /* Set the font size for the year */
+    color: white;
+}
+/* Adjust the size of the navigation arrows */
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-prev,
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-next {
+    font-size: 1.3vw; /* Set the font size of the arrows */
+    width: 1.3vw; /* Set the width of the arrows */
+    height: 1.3vw; /* Set the height of the arrows */
+    border: 0.1vw;
+   
+   
+}
+
+
+
+
+
+.SearchBackground-Style
+{
+   
+    width: 30vw;
+    height: 42.5vw;
+    border-radius:2vw;
+}
