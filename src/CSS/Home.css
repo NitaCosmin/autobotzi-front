@@ -4,7 +4,7 @@
     align-items: center;
     height: 100vh;
     position: relative; 
-    background-image: radial-gradient(circle, #D9d9d9, #048097); /* gradient radial de la galben la roșu */
+    background-image: radial-gradient(circle, #ECFCFF, #048097); 
 }
 
 .HomeBackground-STYLE {

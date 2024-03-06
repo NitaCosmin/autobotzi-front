@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     position: relative; 
+    background-image: radial-gradient(circle, #ECFCFF, #048097); 
 }
 .NameLabel-Login
 {
