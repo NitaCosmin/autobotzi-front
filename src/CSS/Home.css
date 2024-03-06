@@ -4,15 +4,20 @@
     align-items: center;
     height: 100vh;
     position: relative; 
+    background-image: radial-gradient(circle, #D9d9d9, #048097); /* gradient radial de la galben la roșu */
 }
 
 .HomeBackground-STYLE {
-    width: 60vw;
+    
+    pointer-events: none;
+    width: 60%;
     height: auto; 
     padding-top: 1.5vw;
     z-index: 0;
     margin: 0 auto; 
+
 }
+
 
 .HomeContent{
     position: absolute; 
@@ -22,94 +27,124 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+
 }
 
 .Separator-STYLE {
-    top :-9.37vw;
+    pointer-events: none;
+    top :-12.5vw;
     position: absolute; 
-    height: 20.25vw;
+    height: 25vw;
     width: auto;
-    transition: transform 0.3s ease; 
+    transition: transform 0.7s ease; 
 
 }
 
-.ChoiceLabel:hover ~ .Separator-STYLE {    
-    transform: translateX(10%);
-}
- .ChoiceLabel1:hover ~ .Separator-STYLE {    
-    transform: translateX(-10%);
-}
 
 .Line-STYLE {
+    pointer-events: none;
     position: absolute; 
     top: -15vw; 
-    right:-30vw; 
+    right: -30vw; 
     z-index: 2;
-    width: 33.75vw;
-    height: auto;
+    width: 35vw;
+    height: 0.5vw;
+    border-top-left-radius: 0.2vw; 
+    border-bottom-left-radius: 0.2vw; 
+    animation: expandLine 0.7s forwards;
+
 }
 
 
 .Line1-STYLE
 {
-
+    user-select: none;
+    pointer-events: none;
     position: absolute; 
     top: 15.75vw; 
-    right:-3.75vw; 
+    left: -30vw; 
     z-index: 2;
-    width: 33.75vw;
-    height: auto;
-   
+    width: 0vw; 
+    height: 0.5vw;
+    border-top-right-radius: 0.2vw; 
+    border-bottom-right-radius: 0.2vw; 
+    animation: expandLine 0.7s forwards;
 }
+
+
+
 
 .Ellipse-STYLE
 {
-   position:absolute;
+    position:absolute;
     top: 15vw; 
-    width: 1.6vw;
+    width: 0vw;
     height: auto;
-    right: -6.3vw;
-    
+    left: 4.63vw;
+    animation: expandWidth 0.3s ease forwards;
+    transition: transform 0.3s ease; 
+    animation-delay: 0.7s;
+
+
 }
 
 .Ellipse1-STYLE
 {
     position:absolute;
     top: 15vw; 
-    width: 1.65vw;
+    width: 0vw;
     height: auto;
-    right: -8.4vw;
+    left: 6.73vw;
+    animation: expandWidth 0.4s ease forwards;
+    transition: transform 0.3s ease;
+    animation-delay: 0.7s;
+ 
+
 }
 
 .Ellipse2-STYLE
 {
     position:absolute;
     top: 17.1vw; 
-    width: 1.6vw;
+    width: 0vw;
     height: auto;
-    right: -6.37vw;
+    left: 4.63vw;
+    animation: expandWidth 0.5s ease forwards;
+    transition: transform 0.3s ease; 
+    animation-delay: 0.7s;
+
+}
+
+.Ellipse-STYLE:hover,
+.Ellipse1-STYLE:hover,
+.Ellipse2-STYLE:hover
+{
+    transform: scale(1.2); 
 }
 
 .NameLabel
 {
     position: absolute; 
-    top: 13.5vw; 
+    top: 13.7vw; 
     color: white;
     font-family: 'Arame-Mono', sans-serif;
-    font-size: 1.72vw;
+    font-size: 1.7vw;
     font-weight: bold;
-    left: -27.75vw;
+    left: -28vw;
     letter-spacing: 0.08vw;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    user-select: none;
 }
 
 
 .ChoiceLabel {
     position: absolute; 
-    top: -11.1vw; 
-    left: -26.25vw;
-    color: white;
+    top: -13vw; 
+    left: -25vw;
+    color: #fff;
     font-family: 'Arame-Mono', sans-serif;
-    font-size: 6.75vw;
+    font-size: 7.5vw;
     font-weight: bold;
     letter-spacing: 0.1vw;
     transition: transform 0.3s ease; 
@@ -119,32 +154,42 @@
 .ChoiceLabel1
 {
     position: absolute; 
-    top:4.5vw; 
-    right: -26.25vw;
-    color: white;
+    top: 4vw; 
+    right: -27vw;
+    color: #fff;
     font-family: 'Arame-Mono', sans-serif;
-    font-size: 6.75vw;
+    font-size: 7.5vw;
     font-weight: bold;
     letter-spacing: 0.1vw;
     transition: transform 0.3s ease; 
     transform-origin: center;
 }
 
+@keyframes expandWidth {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 1.65vw; /* Dimensiunea finală */
+    }
+  }
+  @keyframes expandLine {
+    from {
+      width: 0vw;
+    }
+    to {
+      width: 33.75vw; /* Dimensiunea finală */
+    }
+  }
 
-
-
-
-
-.ChoiceLabel:hover {
-    transform: translateY(7%) scale(1.18);
-}
-
-.ChoiceLabel1:hover {
-    transform: translateY(-8%) scale(1.18);
-}
-
-
-
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 
 @font-face {

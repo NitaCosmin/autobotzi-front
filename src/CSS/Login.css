@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
+    height: 100vh;
     position: relative; 
 }
 .NameLabel-Login
@@ -38,6 +38,8 @@
     z-index: 2;
     width: 33.75vw;
     height: auto;
+    border-top-left-radius: 0.2vw; 
+    border-bottom-left-radius: 0.2vw; 
 }
 
 
@@ -50,6 +52,8 @@
     z-index: 2;
     width: 33.75vw;
     height: auto;
+    border-top-right-radius: 0.2vw; 
+    border-bottom-right-radius: 0.2vw; 
    
 }
 
@@ -57,9 +61,11 @@
 {
     position:absolute;
     top: 15vw; 
-    width: 1.6vw;
+    width: 1.65vw; 
     height: auto;
-    right: -6.3vw;
+    left: 4.63vw;
+    transition: transform 0.3s ease; 
+    animation-delay: 0.7s;
   
     
 }
@@ -68,18 +74,22 @@
 {
     position:absolute;
     top: 15vw; 
-    width: 1.65vw;
+    width: 1.65vw; 
     height: auto;
-    right: -8.4vw;
+    left: 6.73vw;
+    transition: transform 0.3s ease;
+    animation-delay: 0.7s;
 }
 
 .Ellipse2-STYLE-Login
 {
     position:absolute;
     top: 17.1vw; 
-    width: 1.6vw;
+    width: 1.65vw; 
     height: auto;
-    right: -6.37vw;
+    left: 4.63vw;
+    transition: transform 0.3s ease; 
+    animation-delay: 0.7s;
 }
 
 .NameLabel-Login
