@@ -14,6 +14,7 @@ import AddBackground from '../Imagini/AddBackground.png';
 import SearchBackground from '../Imagini/SearchBackground.png';
 import SelectedImg from '../Imagini/SelectedImg.png';
 import { ListBox } from 'primereact/listbox';
+import Navbar from '../Components/Navbar/Navbar.jsx';
 
 const Admin = () => {
   
@@ -41,7 +42,10 @@ const Admin = () => {
   return (  
   
     <div className="AdminContainer">
-    <div className="MenuBar">
+            <Navbar />
+
+    {/* <div className="MenuBar">
+        
         <img src={MenuBar} alt="" className="MenuBar-Img" />
         <div className="MenuOptions">
             <img src={TeamFinderIcon} alt="" className="MenuIcons" /> 
@@ -57,7 +61,7 @@ const Admin = () => {
         <img src={SelectedImg} alt="" className="Selection-Style" /> 
 
 
-    </div>
+    </div> */}
     <div className="Spacework1">
         <img src={RoboImg} alt="" className="RoboImg-Style" /> 
         <img src={AddBackground} alt="" className="AddBackground-Style" />
@@ -78,8 +82,6 @@ const Admin = () => {
     
 
     </div>
-    <div className="MenuBar"></div>
-  
          
     </div>
      

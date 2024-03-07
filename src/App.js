@@ -6,6 +6,8 @@ import Home from './JSX/Home';
 import SignUp from "./JSX/SingUp";
 import Login from "./JSX/Login";
 import Admin from "./JSX/Admin";
+import Test from "./JSX/Test";
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} /> 
          <Route path="/admin" element={<Admin />} />
+         <Route path="/test" element={<Test />} />
+
 
        
       </Routes>

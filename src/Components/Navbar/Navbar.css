@@ -1,0 +1,89 @@
+.sidebar {
+    user-select: none;
+    position: fixed;
+    top: 0.5%;
+    left: 0.5vw;
+    height: 96%;
+    max-width: 6vw;
+    min-width: 4vw;
+    background-color: #048097; /* culoarea de fundal a barei laterale */
+    padding-top: 3vh;
+    border-radius: 1vw;
+    display: flex; /* Utilizarea flexbox */
+    flex-direction: column; /* Direcția coloanelor */
+    align-items: center; /* Așezați elementele pe axa orizontală */
+}
+
+#navbar {
+    list-style: none;
+    padding: 2vw;
+    margin: 0;
+    display: flex; /* Utilizarea flexbox */
+    flex-direction: column; /* Direcția coloanelor */
+    justify-content: space-between; /* Așezați elementele între spațiile libere */
+    height: 100%; /* Asigurați-vă că înălțimea este 100% pentru a utiliza space-between */
+}
+
+#navbar li {
+    margin-bottom: 2vh;
+}
+
+#navbar li a {
+    display: flex; /* Utilizarea flexbox */
+    align-items: center; /* Așezați elementele pe axa orizontală */
+    padding: 2vh;
+    color: #ECFCFF; /* culoarea textului */
+    transition: background-color 0.3s ease;
+    border-radius: 2vh;
+    transition: 0.3s;
+}
+
+#navbar li a:hover,
+#navbar li a:hover ~ svg{
+
+    background-color: #ECFCFF; 
+    color: #048097;
+}
+
+/* Stilizare pentru iconuri */
+ li svg {
+    height: 2vw;
+    width: 2vw;    
+    transition: 0.1s;
+    
+}
+#navbar li:last-child {
+    margin-top: auto; /* Faceți ca ultimul element să fie pozitionat în partea de jos */
+    padding: 0;
+}
+
+#navbar li.active a {
+    background-color: #ECFCFF;
+    color: #048097;
+}
+#navbar li.active a:hover {
+    border-radius: 1.4vh;
+}
+
+.tooltip{
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    height: 4vh;
+    width: 100%;
+    left: 11vh;
+    background: #D9D9D9;
+    text-align: center;
+    border-radius: 1vh;
+    transform:  translateY(-200%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.02);
+    opacity: 0;
+}
+
+#navbar li a:hover ~.tooltip
+{
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform:  translateY(-140%);
+
+}
