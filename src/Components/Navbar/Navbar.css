@@ -1,13 +1,12 @@
 .sidebar {
     user-select: none;
     position: fixed;
-    top: 0.5%;
-    left: 0.5vw;
+    top: 2%;
+    left: 0.5%;
     height: 96%;
-    max-width: 6vw;
-    min-width: 4vw;
+    max-width: 5%;
+    min-width: 5%;
     background-color: #048097; /* culoarea de fundal a barei laterale */
-    padding-top: 3vh;
     border-radius: 1vw;
     display: flex; /* Utilizarea flexbox */
     flex-direction: column; /* Direcția coloanelor */
@@ -25,13 +24,13 @@
 }
 
 #navbar li {
-    margin-bottom: 2vh;
+    margin-bottom: 50%;
 }
 
 #navbar li a {
     display: flex; /* Utilizarea flexbox */
     align-items: center; /* Așezați elementele pe axa orizontală */
-    padding: 2vh;
+    padding: 20%;
     color: #ECFCFF; /* culoarea textului */
     transition: background-color 0.3s ease;
     border-radius: 2vh;
@@ -44,17 +43,24 @@
     background-color: #ECFCFF; 
     color: #048097;
 }
-
+i{
+    display: flex; /* Utilizarea flexbox */
+    align-items: center; /* Așezați elementele pe axa orizontală */
+    padding: 1vh;
+    transition: background-color 0.3s ease;
+    border-radius: 2vh;
+    transition: 0.3s;
+}
 /* Stilizare pentru iconuri */
  li svg {
     height: 2vw;
     width: 2vw;    
-    transition: 0.1s;
+    transition: 0.3s;
     
 }
 #navbar li:last-child {
-    margin-top: auto; /* Faceți ca ultimul element să fie pozitionat în partea de jos */
-    padding: 0;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 #navbar li.active a {
@@ -64,26 +70,124 @@
 #navbar li.active a:hover {
     border-radius: 1.4vh;
 }
+#navbar li.active .tooltip {
+    opacity: 1;
+    transform:  translateY(-2%);
+}
 
 .tooltip{
     pointer-events: none;
     user-select: none;
     position: absolute;
-    height: 4vh;
+    height: 4vw;
     width: 100%;
-    left: 11vh;
-    background: #D9D9D9;
+    left: 0%;
+    font-size: 1.5vh;
+    background: transparent;
     text-align: center;
     border-radius: 1vh;
-    transform:  translateY(-200%);
-    box-shadow: 0 5px 10px rgba(0, 0, 0,0.02);
+    transform:  translateY(-50%);
     opacity: 0;
+    color: #ECFCFF;
 }
 
-#navbar li a:hover ~.tooltip
+#navbar li a:hover ~.tooltip,
+#navbar li i:hover ~.tooltip
+
 {
     opacity: 1;
     transition: all 0.5s ease;
-    transform:  translateY(-140%);
+    transform:  translateY(-2%);
 
+}
+
+
+@media screen and (max-aspect-ratio: 1.2) {
+    .sidebar {
+        top: 50%;
+        left: 0.5%;
+        height: 10%;
+        max-width: 99%;
+        min-width: 99%;
+        border-radius: 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        max-height: 7%;
+        min-height: 7%;
+        border-radius: 2vh;
+    }
+
+    #navbar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #navbar li {
+        margin-bottom: 0;
+    }
+
+    #navbar li a,
+    #navbar li:last-child {
+        padding: 1.5vh;
+    }
+
+    svg {
+        height: 3vh;
+        width: 3vh;
+        transition: 0.3s;
+    }
+
+    .tooltip {
+        pointer-events: none;
+        user-select: none;
+        position: absolute;
+        height: 4vw;
+        width: 100%;
+        font-size: 1.5vh;
+        background: transparent;
+        text-align: center;
+        border-radius: 1vh;
+        transform: translateY(110%);
+        opacity: 0;
+        color: #ECFCFF;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    #navbar li.active .tooltip {
+        opacity: 1;
+    }
+
+    #navbar li:hover .tooltip {
+        opacity: 1;
+        transform: translateY(120%);
+    }
+
+    #navbar li.active .tooltip {
+        opacity: 1;
+        transform: translateY(-1%);
+        transform: translateX(-12%);
+    }
+
+    #navbar li {
+        margin-bottom: 1%;
+    }
+
+    #navbar li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1) {
+    .sidebar {
+        top: 93%;
+        left: 0%;
+        height: 10%;
+        max-width: 100%;
+        min-width: 100%;
+        border-radius: 0;
+    }
 }
