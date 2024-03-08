@@ -4,8 +4,8 @@
     top: 2%;
     left: 0.5%;
     height: 96%;
-    max-width: 5%;
-    min-width: 5%;
+    max-width: 6vw;
+    min-width: 5vw;
     background-color: #048097; /* culoarea de fundal a barei laterale */
     border-radius: 1vw;
     display: flex; /* Utilizarea flexbox */
@@ -15,25 +15,24 @@
 
 #navbar {
     list-style: none;
-    padding: 2vw;
-    margin: 0;
+    padding: 15px;
     display: flex; /* Utilizarea flexbox */
     flex-direction: column; /* Direcția coloanelor */
     justify-content: space-between; /* Așezați elementele între spațiile libere */
     height: 100%; /* Asigurați-vă că înălțimea este 100% pentru a utiliza space-between */
+    align-items: center; /* Așează iconurile pe axa verticală în mijlocul barei laterale */
 }
 
 #navbar li {
-    margin-bottom: 50%;
+    margin-bottom: 45%;
 }
 
 #navbar li a {
     display: flex; /* Utilizarea flexbox */
-    align-items: center; /* Așezați elementele pe axa orizontală */
-    padding: 20%;
+    padding: 1vw;
+    border-radius: 20%;
     color: #ECFCFF; /* culoarea textului */
     transition: background-color 0.3s ease;
-    border-radius: 2vh;
     transition: 0.3s;
 }
 
@@ -42,20 +41,19 @@
 
     background-color: #ECFCFF; 
     color: #048097;
+    
 }
 i{
     display: flex; /* Utilizarea flexbox */
     align-items: center; /* Așezați elementele pe axa orizontală */
-    padding: 1vh;
+    padding: 2vh;
     transition: background-color 0.3s ease;
-    border-radius: 2vh;
     transition: 0.3s;
 }
 /* Stilizare pentru iconuri */
  li svg {
-    height: 2vw;
-    width: 2vw;    
-    transition: 0.3s;
+        height: 30px; 
+        width: 30px;
     
 }
 #navbar li:last-child {
@@ -68,24 +66,23 @@ i{
     color: #048097;
 }
 #navbar li.active a:hover {
-    border-radius: 1.4vh;
+    border-radius: 10%;
 }
 #navbar li.active .tooltip {
     opacity: 1;
-    transform:  translateY(-2%);
+    transform:  translateY(-3%);
 }
 
 .tooltip{
     pointer-events: none;
     user-select: none;
     position: absolute;
-    height: 4vw;
+    height: 10%;
     width: 100%;
     left: 0%;
-    font-size: 1.5vh;
+    font-size: 80%;
     background: transparent;
     text-align: center;
-    border-radius: 1vh;
     transform:  translateY(-50%);
     opacity: 0;
     color: #ECFCFF;
@@ -97,19 +94,18 @@ i{
 {
     opacity: 1;
     transition: all 0.5s ease;
-    transform:  translateY(-2%);
+    transform:  translateY(-3%);
 
 }
 
 
-@media screen and (max-aspect-ratio: 1.2) {
+@media screen and (max-aspect-ratio: 1) {
     .sidebar {
-        top: 50%;
-        left: 0.5%;
+        top: 92%;
+        left: 10%;
         height: 10%;
-        max-width: 99%;
-        min-width: 99%;
-        border-radius: 0;
+        max-width: 80%;
+        min-width: 80%;
         flex-direction: row;
         align-items: center;
         padding: 0;
@@ -125,63 +121,43 @@ i{
         height: 100%;
         width: 100%;
     }
-
-    #navbar li {
-        margin-bottom: 0;
+    #navbar li a {
+        display: flex; /* Utilizarea flexbox */
+        padding: 30px; /* Dimensiune fixă pentru padding */
+        transition: background-color 0.3s ease;
+        border-radius: 10px; /* Dimensiune fixă pentru border-radius */
+        transition: 0.3s;
     }
 
     #navbar li a,
     #navbar li:last-child {
-        padding: 1.5vh;
+        padding: 15px; /* Dimensiune fixă pentru padding */
     }
 
-    svg {
-        height: 3vh;
-        width: 3vh;
+     li svg {
+        height: 2vh; /* Dimensiune fixă pentru SVG */
+        width: 2vh; /* Dimensiune fixă pentru SVG */
         transition: 0.3s;
     }
 
-    .tooltip {
-        pointer-events: none;
-        user-select: none;
-        position: absolute;
-        height: 4vw;
-        width: 100%;
-        font-size: 1.5vh;
-        background: transparent;
-        text-align: center;
-        border-radius: 1vh;
-        transform: translateY(110%);
-        opacity: 0;
-        color: #ECFCFF;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
 
-    #navbar li.active .tooltip {
-        opacity: 1;
-    }
-
-    #navbar li:hover .tooltip {
-        opacity: 1;
-        transform: translateY(120%);
-    }
-
-    #navbar li.active .tooltip {
-        opacity: 1;
-        transform: translateY(-1%);
-        transform: translateX(-12%);
-    }
-
-    #navbar li {
-        margin-bottom: 1%;
-    }
-
+    #navbar li,
     #navbar li:last-child {
-        margin-bottom: 0;
+        margin: 0; 
+    }
+    
+
+    #navbar li.active .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li a:hover ~ .tooltip,
+    #navbar li i:hover ~ .tooltip {
+        opacity: 0;
     }
 }
 
-@media screen and (max-aspect-ratio: 1) {
+
+@media screen and (max-aspect-ratio: 17/19.5) {
     .sidebar {
         top: 93%;
         left: 0%;
@@ -189,5 +165,36 @@ i{
         max-width: 100%;
         min-width: 100%;
         border-radius: 0;
+    }
+
+    #navbar {
+        left: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-aspect-ratio: 1.2) {
+    
+
+    #navbar li.active .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li a:hover ~.tooltip,
+    #navbar li i:hover ~.tooltip
+    
+    {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    #navbar li.active .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li:hover .tooltip,
+    #navbar li a:hover ~.tooltip,
+    #navbar li i:hover ~.tooltip {
+        opacity: 0;
     }
 }

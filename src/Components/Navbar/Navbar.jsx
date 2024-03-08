@@ -43,9 +43,7 @@ function Navbar(){
                 <li className={location.pathname === '/admin' ? 'active' : ''}><Link to="/admin"><FaUserLarge /></Link>
                         <span className='tooltip'>user</span>
                 </li>
-                <li className={location.pathname === '/test' ? 'active' : ''}><Link to="/test"><SiTestrail /></Link>
-                        <span className='tooltip'>Test</span>
-                </li >
+
                 <li className={location.pathname === '/' ? 'active' : ''}><Link to="/"><BiLogOut /></Link>
                         <span className='tooltip'>logout</span>
                 </li>
