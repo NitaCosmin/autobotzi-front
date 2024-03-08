@@ -14,7 +14,7 @@ import AddBackground from '../Imagini/AddBackground.png';
 import SearchBackground from '../Imagini/SearchBackground.png';
 import SelectedImg from '../Imagini/SelectedImg.png';
 import { ListBox } from 'primereact/listbox';
-import Navbar from '../Components/Navbar/Navbar.jsx';
+import Navbar from '../Navbar/Navbar.jsx';
 
 const Admin = () => {
   

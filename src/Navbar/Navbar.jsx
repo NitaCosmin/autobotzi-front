@@ -1,11 +1,10 @@
-import '../Navbar/Navbar.css';
+import './Navbar.css';
 import { FaHome } from "react-icons/fa";
 import { RiDashboardFill } from "react-icons/ri";
 import { BsBellFill } from "react-icons/bs";
 import { FaUsers ,FaUserLarge } from "react-icons/fa6";
 import { BiLogOut } from "react-icons/bi";
-import { SiTestrail } from "react-icons/si";
-import { PiSnapchatLogoFill } from "react-icons/pi";
+import TeamFinderIcon from '../Imagini/TeamFinderIcon.png';
 import { useLocation } from 'react-router-dom';
 
 
@@ -24,7 +23,7 @@ function Navbar(){
            <div className='sidebar'>   
             <ul id='navbar'>
                 
-                 <li className='logo'> <i><PiSnapchatLogoFill /></i>
+                 <li className='logo'> <img src={TeamFinderIcon} alt="" className="" /> 
                         <span className='tooltip'>Team Finder</span>
                 </li>
 

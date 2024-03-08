@@ -5,7 +5,7 @@
     left: 0.5%;
     height: 96%;
     max-width: 6vw;
-    min-width: 5vw;
+    min-width: 4vw;
     background-color: #048097; /* culoarea de fundal a barei laterale */
     border-radius: 1vw;
     display: flex; /* Utilizarea flexbox */
@@ -43,10 +43,13 @@
     color: #048097;
     
 }
-i{
+img{
+
+    width: 40px; 
     display: flex; /* Utilizarea flexbox */
     align-items: center; /* Așezați elementele pe axa orizontală */
-    padding: 2vh;
+    padding: 1vh;
+    color:#048097;
     transition: background-color 0.3s ease;
     transition: 0.3s;
 }
@@ -70,17 +73,18 @@ i{
 }
 #navbar li.active .tooltip {
     opacity: 1;
-    transform:  translateY(-3%);
+    transform:  translateY(2%);
 }
 
 .tooltip{
     pointer-events: none;
     user-select: none;
     position: absolute;
+    font-family: 'Arame-Mono', sans-serif;
     height: 10%;
     width: 100%;
     left: 0%;
-    font-size: 80%;
+    font-size: 70%;
     background: transparent;
     text-align: center;
     transform:  translateY(-50%);
@@ -88,13 +92,19 @@ i{
     color: #ECFCFF;
 }
 
-#navbar li a:hover ~.tooltip,
-#navbar li i:hover ~.tooltip
+#navbar li a:hover ~.tooltip
 
 {
     opacity: 1;
     transition: all 0.5s ease;
-    transform:  translateY(-3%);
+    transform:  translateY(2%);
+
+}
+#navbar li img:hover ~.tooltip
+{
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform:  translateY(-6%);
 
 }
 
@@ -151,7 +161,7 @@ i{
     #navbar li:hover .tooltip,
     #navbar li:hover .tooltip,
     #navbar li a:hover ~ .tooltip,
-    #navbar li i:hover ~ .tooltip {
+    #navbar li img:hover ~ .tooltip {
         opacity: 0;
     }
 }
@@ -183,7 +193,7 @@ i{
     #navbar li:hover .tooltip,
     #navbar li:hover .tooltip,
     #navbar li a:hover ~.tooltip,
-    #navbar li i:hover ~.tooltip
+    #navbar li img:hover ~.tooltip
     
     {
         opacity: 0;
@@ -194,7 +204,11 @@ i{
     #navbar li:hover .tooltip,
     #navbar li:hover .tooltip,
     #navbar li a:hover ~.tooltip,
-    #navbar li i:hover ~.tooltip {
+    #navbar li img:hover ~.tooltip {
         opacity: 0;
     }
+}
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
 }
