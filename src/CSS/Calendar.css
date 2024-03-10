@@ -1,0 +1,59 @@
+/*Calendar*/
+
+.Calendar .p-calendar,
+.Calendar .p-calendar .p-calendar-container {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.Calendar .p-calendar .p-datepicker tbody .p-datepicker-today {
+    background-color: #FFD600; /* Background color for the current date cell */
+    border-radius: 0.5vw;
+    color: gray; /* Border radius for rounded corners */
+}
+
+.Calendar .p-calendar .p-datepicker td.p-datepicker-other-month {
+    color: Gray; /* Set the background color for days before the first day of the current month */
+}
+
+/* Hide the "Wk" column header and data cells */
+.Calendar .p-calendar .p-datepicker th:nth-child(1),
+.Calendar .p-calendar .p-datepicker td:nth-child(8n+1) {
+    display: none;
+}
+
+/* Adjust the font size of the month and year in the calendar header */
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-month,
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-year {
+    font-size: 1.3vw; /* Set the font size for the month and year */
+    color: #082A3E;
+    
+}
+
+/* Adjust the size of the navigation arrows */
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-prev,
+.Calendar .p-calendar .p-datepicker-header .p-datepicker-next {
+    font-size: 1.3vw; /* Set the font size of the arrows */
+    width: 2vw; /* Set the width of the arrows */
+    height: 2vw; /* Set the height of the arrows */
+    border: none; /* Remove any borders */
+    color: #082A3E; /* Set arrow color */
+    background-color: transparent; /* Set background color to transparent */
+    line-height: 1; /* Ensure arrows are centered vertically */
+    padding: 0 !important; /* Remove any padding */
+    margin: 0 !important; /* Remove any margin */
+}
+.Calendar
+{
+    z-index: 2;
+    position: absolute;
+    margin-top: 5vw;
+    width: 30vw;
+    height: 15vw;
+    font-size: 1.2vw;
+    color: #082A3E;
+
+    
+    
+    
+}
