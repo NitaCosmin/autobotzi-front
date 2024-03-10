@@ -38,6 +38,7 @@ const Admin = () => {
         
         
     ];
+  
   return (  
   
     <div className="AdminContainer">
@@ -45,7 +46,7 @@ const Admin = () => {
         <img src={MenuBar} alt="" className="MenuBar-Img" />
         <div className="MenuOptions">
             <img src={TeamFinderIcon} alt="" className="MenuIcons" /> 
-            <img src={HomeIcon} alt="" className="MenuIcons"  />
+            <img src={HomeIcon} alt="" className="MenuIcons" onclick="changeBackground('HomeIcon')" />
             <img src={SquareIcon} alt="" className="MenuIcons"  />  
             <img src={NotificationIcon} alt="" className="MenuIcons"  /> 
             <img src={TeamIcon} alt="" className="MenuIcons"  />
@@ -54,7 +55,7 @@ const Admin = () => {
 
 
         </div>
-        <img src={SelectedImg} alt="" className="Selection-Style" /> 
+       {/*} <img src={SelectedImg} alt="" className="Selection-Style" />*/} 
 
 
     </div>
