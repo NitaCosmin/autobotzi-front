@@ -44,7 +44,7 @@ const Admin = () => {
   return (  
   
     <div className="AdminContainer">
-    <div className="MenuBar">
+    <div className="MenuBar disable-selection ">
         <img src={MenuBar} alt="" className="MenuBar-Img" />
         <div className="MenuOptions">
            
@@ -61,23 +61,23 @@ const Admin = () => {
 
 
     </div>
-    <div className="Spacework1">
-        <img src={RoboImg} alt="" className="RoboImg-Style" /> 
-        <img src={AddBackground} alt="" className="AddBackground-Style" />
-        <div className="Departments-Label">Departments</div>  
-        <div className="Filters-Label">Filers</div> 
-        <div className="Department-Filter">  
+    <div className="Spacework1 disable-selection ">
+        <img src={RoboImg} alt="" className="RoboImg-Style " /> 
+        <img src={AddBackground} alt="" className="AddBackground-Style " />
+        <div className="Departments-Label ">Departments</div>  
+        <div className="Filters-Label ">Filers</div> 
+        <div className="Department-Filter  ">  
             <ListBox value={selectedDep} onChange={(e) => setselectedDep(e.value)} options={Departments} optionLabel="name" 
                 className="w-full md:w-14rem p-invalid" />
         </div>
     </div>
-    <div className="Spacework2">
+    <div className="Spacework2 disable-selection ">
         
-           <img src={CalendarBackground} alt="" className="CalendarBackground-Style" />
-           <div className="Calendar">
+           <img src={CalendarBackground} alt="" className="CalendarBackground-Style  " />
+           <div className="Calendar  ">
            <Calendar value={date} onChange={(e) => setDate(e.value)} inline showWeek />
            </div>
-    <img src={SearchBackground} alt="" className="SearchBackground-Style" />
+    <img src={SearchBackground} alt="" className="SearchBackground-Style " />
     
 
     </div>
