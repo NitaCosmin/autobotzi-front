@@ -10,7 +10,7 @@
    
 }
 
-.MenuBar {
+.EmptyBar {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -24,51 +24,6 @@
     
    
 }
-
-
-.MenuBar-Img
-{
-    height: 99vh;
-    max-height: 75vw;
-    width: 9vw;
-    margin-left: 0.5vw;
-    margin-top: 0vw;
-    z-index: 1;
-    position: relative;
-    border-radius: 1.5vw;
-    border: 0.3vw solid #082A3E;
-}
-.MenuOptions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 95vh;
-    max-height: 70vw;
-    width: 7.3vw;
-    margin-left: 1.6vw;
-    margin-top: 1.5vw;
-    z-index: 3;
-    position: absolute;
-    gap: 5vw;
-    overflow: hidden; /* Add overflow property */
-   
-}
-
-
-.MenuIcons {
-    width: 4vw;
-    height: auto;
-   
-}
-
-.MenuIconsExit {
-    width: 4vw;
-    height: auto;
-    margin-top: auto; /* Push the exit icon to the bottom */
-   
-}
-
 
 
 .Spacework1{

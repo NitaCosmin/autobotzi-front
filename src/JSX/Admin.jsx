@@ -2,19 +2,13 @@ import React, { useState } from "react";
 import { Calendar } from 'primereact/calendar';
 import "../CSS/Admin.css";
 import "../CSS/Calendar.css";
-import MenuBar from '../WhiteMenu/MenuBarWhite.png';
-import ExitIcon from '../Imagini/ExitIcon.png';
-import HomeIcon from '../Imagini/HomeIcon.png';
-import SquareIcon from '../Imagini/ProjectsIcon.png';
-import NotificationIcon from '../Imagini/NotificationIcon.png';
-import TeamIcon from '../Imagini/DepartmentsIcon.png';
-import UserIcon from '../Imagini/UserIcon.png';
 import RoboImg from '../WhiteMenu/RoboImgWhite.png';
 import CalendarBackground from '../WhiteMenu/CalendarBackgroundWhite.png';
 import AddBackground from '../WhiteMenu/AddBackgroundWhite.png';
 import SearchBackground from '../WhiteMenu/SearchBackgroundWhite.png';
 import { ListBox } from 'primereact/listbox';
 import {Link, useLocation } from 'react-router-dom';
+import Navbar from "./Navbar";
 
 
 const Admin = () => {
@@ -44,23 +38,7 @@ const Admin = () => {
   return (  
   
     <div className="AdminContainer">
-    <div className="MenuBar disable-selection ">
-        <img src={MenuBar} alt="" className="MenuBar-Img" />
-        <div className="MenuOptions">
-           
-            <img src={HomeIcon} alt="" className="MenuIcons" />
-            <img src={SquareIcon} alt="" className="MenuIcons"  />  
-            <img src={NotificationIcon} alt="" className="MenuIcons"  /> 
-            <img src={TeamIcon} alt="" className="MenuIcons"  />
-            <img src={UserIcon} alt="" className="MenuIcons"  />  
-            <img src={ExitIcon} alt="" className="MenuIconsExit"  />  
-
-
-        </div>
-       
-
-
-    </div>
+    <Navbar/>
     <div className="Spacework1 disable-selection ">
         <img src={RoboImg} alt="" className="RoboImg-Style " /> 
         <img src={AddBackground} alt="" className="AddBackground-Style " />
@@ -71,7 +49,7 @@ const Admin = () => {
                 className="w-full md:w-14rem p-invalid" />
         </div>
     </div>
-    <div className="Spacework2 disable-selection ">
+    <div className="Spacework2 ">
         
            <img src={CalendarBackground} alt="" className="CalendarBackground-Style  " />
            <div className="Calendar  ">
@@ -81,7 +59,7 @@ const Admin = () => {
     
 
     </div>
-    <div className="MenuBar"></div>
+    <div className="EmptyBar"></div>
   
          
     </div>

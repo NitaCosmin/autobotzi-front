@@ -7,6 +7,7 @@ import SignUp from "./JSX/SingUp";
 import Login from "./JSX/Login";
 import Admin from "./JSX/Admin";
 
+
 function App() {
   return (
     <Router>
