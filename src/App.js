@@ -6,6 +6,7 @@ import Home from './JSX/Home';
 import SignUp from "./JSX/SingUp";
 import Login from "./JSX/Login";
 import Admin from "./JSX/Admin";
+import Projects from "./JSX/Projects";
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} /> 
          <Route path="/admin" element={<Admin />} />
+         <Route path="/projects" element={<Projects />} />
+
 
        
       </Routes>

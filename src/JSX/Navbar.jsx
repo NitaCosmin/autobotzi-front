@@ -13,33 +13,66 @@ import UserIcon from '../Imagini/UserIcon.png';
 import {Link, useLocation } from 'react-router-dom';
 
 
-const Navbar = () => {
-    
-  
-  return (  
-  
-    
-    <div className="MenuBar disable-selection ">
-        <img src={MenuBar} alt="" className="MenuBar-Img" />
-        <div className="MenuOptions">
-           
-            <img src={HomeIcon} alt="" className="MenuIcons" />
-            <img src={SquareIcon} alt="" className="MenuIcons"  />  
-            <img src={NotificationIcon} alt="" className="MenuIcons"  /> 
-            <img src={TeamIcon} alt="" className="MenuIcons"  />
-            <img src={UserIcon} alt="" className="MenuIcons"  />  
-            <img src={ExitIcon} alt="" className="MenuIconsExit"  />  
 
 
-        </div>
-       
+
+function Navbar(){
+
+  const location = useLocation();
 
 
-    </div>
-   
-     
-    
-  );
+return (
+  <> 
+     <div className='sidebar'>   
+      <ul id='navbar'>
+
+      <li className={location.pathname === '/admin' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={HomeIcon} alt='/admin' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>Home</span>
+      </li>
+
+      <li className={location.pathname === '/projects' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={SquareIcon} alt='/projects' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>projects</span>
+      </li>
+
+      <li className={location.pathname === '/user' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={UserIcon} alt='/user' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>user</span>
+      </li>
+
+      <li className={location.pathname === '/admin' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={TeamIcon} alt='/departments' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>departments</span>
+      </li>
+
+      <li className={location.pathname === '/admin' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={NotificationIcon} alt='/message' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>Message</span>
+      </li>
+
+      <li className={location.pathname === '/' ? 'active' : ''}>
+            <a href="/admin">
+                    <img src={ExitIcon} alt='/' className="MenuIcons" />
+                </a>
+            <span className='tooltip'>Exit</span>
+      </li>
+
+      </ul>
+      
+  </div> 
+  </>
+);
+
 };
-
 export default Navbar;
