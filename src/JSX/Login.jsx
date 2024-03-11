@@ -27,7 +27,7 @@ const Login = () => {
           </Link>
           <div className="ChoiceLabel-Login">Login</div>
           <Link to="/admin" >
-          <button type="submit" class="button-Login">Continue</button>
+          <button type="submit" className="button-Login">Continue</button>
           </Link>
           <div className="Collumn-Input-Login">
           <input type="email" className="textbox-Login" id="email" name="email" placeholder="E mail" required/>
