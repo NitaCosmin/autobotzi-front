@@ -34,7 +34,7 @@
 .Line-STYLE-SingUp {
     position: absolute; 
     top: -15vw; 
-    right:-3.75vw; 
+    right:-4.15vw; 
     z-index: 2;
     width: 33.75vw;
     height: auto;
@@ -46,7 +46,7 @@
 
     position: absolute; 
     top: 15.75vw; 
-    right:-3.75vw; 
+    right:-4.15vw; 
     z-index: 2;
     width: 33.75vw;
     height: auto;

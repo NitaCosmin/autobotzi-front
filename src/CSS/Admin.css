@@ -5,6 +5,7 @@
     position: relative; 
     background-color: #048097;
     height: 120vh;
+    
    
     
    
@@ -177,6 +178,14 @@
 
 
 
+
+.Test {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    
+}
 
 
 

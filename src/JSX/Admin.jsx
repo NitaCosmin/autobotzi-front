@@ -9,6 +9,7 @@ import SearchBackground from '../WhiteMenu/SearchBackgroundWhite.png';
 import { ListBox } from 'primereact/listbox';
 import {Link, useLocation } from 'react-router-dom';
 import Navbar from "./Navbar";
+import DepartmentCard from "../JSX/DepartmentCard";
 
 
 const Admin = () => {
@@ -47,6 +48,15 @@ const Admin = () => {
         <div className="Department-Filter  ">  
             <ListBox value={selectedDep} onChange={(e) => setselectedDep(e.value)} options={Departments} optionLabel="name" 
                 className="w-full md:w-14rem p-invalid" />
+        </div>
+        <div className="Test">
+
+        <DepartmentCard/>
+        <DepartmentCard/>
+        <DepartmentCard/>
+
+
+        
         </div>
     </div>
     <div className="Spacework2 ">
