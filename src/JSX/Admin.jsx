@@ -10,6 +10,7 @@ import { ListBox } from 'primereact/listbox';
 import {Link, useLocation } from 'react-router-dom';
 import Navbar from "./Navbar";
 import DepartmentCard from "../JSX/DepartmentCard";
+import { MdAdd } from "react-icons/md";
 
 
 const Admin = () => {
@@ -21,10 +22,13 @@ const Admin = () => {
   
     <div className="AdminContainer">
       <Navbar/> 
-      <div className="DepListContainer">
+      <div className="DepList">
       <div className="AddRow">
-        <label className="DepLabel">My Label</label>
+      <div className="namePageDep"><p className="titleDep">Departments</p></div>
+                <div className="addDep"><Link><MdAdd/></Link></div>
       </div>
+      <div className="DepListContainer">
+      
       <DepartmentCard/>
       <DepartmentCard/>
       <DepartmentCard/>
@@ -41,6 +45,7 @@ const Admin = () => {
       <DepartmentCard/>
       <DepartmentCard/>
       <DepartmentCard/>
+      </div>
       </div>
       <div className="OthersContainer">
         

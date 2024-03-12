@@ -8,6 +8,8 @@
     background-color:transparent;
     flex-direction: column;
     transform: scale(0.6);
+    margin-top: 0.3vw;
+    
     
 }
 

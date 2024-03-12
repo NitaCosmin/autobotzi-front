@@ -4,35 +4,57 @@
     align-items: flex-start;
     position: relative; 
     background-color: #048097;
-    height: 120vh;
+    height: 100vh;
     
    
     
    
+}
+.DepList
+{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    width: 59vw;
+    height: 56.5vw; /* Fixed height */
+    margin-top: 1.2vw;
+    margin-left: 9vw;
+  
+    gap:0.1vw;
 }
 
-.EmptyBar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 10vw;
-    height: 100vh; /* Set height to 100% of the viewport height */
-    height: 100vh;
-    flex-direction: row;
-    gap: 1vw;
-}
+
 .DepListContainer {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: flex-start;
     align-items: center;
     width: 59vw;
-    height: 55vw; /* Fixed height */
-    margin-top: 3vw;
-    margin-left: 9vw;
-    border: 1px solid black;
+    height: 52vw; /* Fixed height */
+   
     overflow-y: auto;
-    gap:1vw;
+    gap: 1vw;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #048097  #E5F3FE; /* For Firefox */
+}
+
+/* Webkit (Chrome, Safari, Edge) scrollbar customization */
+.DepListContainer::-webkit-scrollbar {
+    width: 3vw; /* Width of the scrollbar */
+}
+
+.DepListContainer::-webkit-scrollbar-track {
+    background-color: #E5F3FE; /* Color of the scrollbar track */
+}
+
+.DepListContainer::-webkit-scrollbar-thumb {
+    background-color: #048097; /* Color of the scrollbar */
+}
+
+/* Remove border */
+.DepListContainer {
+    border: none;
 }
 
 .OthersContainer
@@ -42,9 +64,8 @@
     justify-content: center;
     align-items: center;
     width: 28vw;
-    height: 55vw;
-    margin-top:3vw;
-   
+    height: 56.5vw;
+    margin-top:1.2vw;
     border: 1px solid black;
     gap :0.1vw;
 
@@ -57,9 +78,39 @@
     justify-content: flex-start;
     align-items: center;
     width:50vw ;
-    height: 3.5vw;
+    height: 3.9vw;
+    gap:2.5vw;
+   
 }
 
+.namePageDep {
+    width: 20vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 0.7vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: column; /* Așază conținutul pe verticală */
+    margin-left: 1.5vw;
+}
+.titleDep {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+}
+
+.addDep {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #ECFCFF; 
+    border-radius: 5vw;
+    display: flex;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+   
+}
 
 
 
