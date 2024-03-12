@@ -4,7 +4,6 @@
     align-items: flex-start;
     position: relative; 
     background-color: #048097;
-<<<<<<< HEAD
     height: 120vh;
     
    
@@ -18,9 +17,7 @@
     align-items: flex-start;
     width: 10vw;
     height: 100vh; /* Set height to 100% of the viewport height */
-=======
     height: 100vh;
->>>>>>> e1168ab706cdf5818c0ef2f3cf42248fa49d5912
     flex-direction: row;
     gap: 1vw;
 }

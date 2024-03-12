@@ -45,6 +45,7 @@
     display: flex;
     align-items: center; /* Aliniază conținutul pe verticală */
     justify-content: center; /* Aliniază conținutul pe orizontală */
+    margin-right:60vw;
 }
 
 svg {
@@ -52,6 +53,7 @@ svg {
     color: #082A3E;
     width: 3.5vw; /* Lățimea SVG-ului */
     height: 3.5vw; /* Înălțimea SVG-ului se ajustează automat */
+    margin-top: 0.3vw;
 }
 
 
