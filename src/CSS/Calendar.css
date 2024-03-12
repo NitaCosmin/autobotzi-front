@@ -7,9 +7,9 @@
 }
 
 .Calendar .p-calendar .p-datepicker tbody .p-datepicker-today {
-    background-color: #FFD600; /* Background color for the current date cell */
+    background-color: #048097; /* Background color for the current date cell */
     border-radius: 0.5vw;
-    color: gray; /* Border radius for rounded corners */
+    color: #082A3E; /* Border radius for rounded corners */
 }
 
 .Calendar .p-calendar .p-datepicker td.p-datepicker-other-month {
@@ -43,20 +43,7 @@
     padding: 0 !important; /* Remove any padding */
     margin: 0 !important; /* Remove any margin */
 }
-.Calendar
-{
-    z-index: 2;
-    position: absolute;
-    margin-top: 5vw;
-    width: 30vw;
-    height: 15vw;
-    font-size: 1.2vw;
-    color: #082A3E;
 
-    
-    
-    
-}
 
 
 

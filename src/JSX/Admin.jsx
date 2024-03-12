@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { Calendar } from 'primereact/calendar';
 import "../CSS/Admin.css";
 import "../CSS/Calendar.css";
-
-import CalendarBackground from '../WhiteMenu/CalendarBackgroundWhite.png';
-import AddBackground from '../WhiteMenu/AddBackgroundWhite.png';
-import SearchBackground from '../WhiteMenu/SearchBackgroundWhite.png';
-import { ListBox } from 'primereact/listbox';
+import RectangleBackground from "../Imagini/RectangleBackground.png";
+import BigRectangleBackground from "../Imagini/BigRectangleBackground.png";
+import EditIcon from "../Imagini/EditIcon.png";
+import PhotoProfile from "../Imagini/PhotoProfile.png";
 import {Link, useLocation } from 'react-router-dom';
 import Navbar from "./Navbar";
 import DepartmentCard from "../JSX/DepartmentCard";
@@ -48,7 +47,44 @@ const Admin = () => {
       </div>
       </div>
       <div className="OthersContainer">
+        <div className="ProfileRectangle">
+         <img src={RectangleBackground} alt="" className="RectangleBackground" />
+         <img src={EditIcon} alt="" className="EditIcon" />
+         <p className="titleProfile">Profile</p>
+         <img src={PhotoProfile} alt="" className="PhotoProfile" />
+         <p className="AdmName">Nume</p>
+         <p className="AdmEmail">exemplu@gmail.com</p>
+        </div>
         
+        <div className="CalendarRectangle">
+        <img src={BigRectangleBackground} alt="" className="BigRectangleBackground" />
+        <div className="Calendar  ">
+           <Calendar value={date} onChange={(e) => setDate(e.value)} inline showWeek />
+           </div>
+        </div>
+       
+        <div className="CalendarRectangle">
+         <img src={BigRectangleBackground} alt="" className="BigRectangleBackground" />
+         <p className="titleEmployee">Employer List</p>
+         <div className="EmployeeList">
+         <div className="EmployeeRow">
+         <img src={PhotoProfile} alt="" className="EmployeeLstImg" />
+         <p className="EmployeeLstName">I don t have a name lmao</p>
+         </div>
+         <div className="EmployeeRow">
+         <img src={PhotoProfile} alt="" className="EmployeeLstImg" />
+         <p className="EmployeeLstName">I don t have a name lmao</p>
+         </div>
+         <div className="EmployeeRow">
+         <img src={PhotoProfile} alt="" className="EmployeeLstImg" />
+         <p className="EmployeeLstName">I don t have a name lmao</p>
+         </div>
+         </div>
+      </div>
+
+     
+        
+
       </div>
     </div>
      

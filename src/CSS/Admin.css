@@ -5,7 +5,7 @@
     position: relative; 
     background-color: #048097;
     height: 100vh;
-    
+    gap:0.1vw
    
     
    
@@ -20,7 +20,7 @@
     height: 56.5vw; /* Fixed height */
     margin-top: 1.2vw;
     margin-left: 9vw;
-  
+
     gap:0.1vw;
 }
 
@@ -46,30 +46,18 @@
 
 .DepListContainer::-webkit-scrollbar-track {
     background-color: #E5F3FE; /* Color of the scrollbar track */
+   
 }
 
 .DepListContainer::-webkit-scrollbar-thumb {
     background-color: #048097; /* Color of the scrollbar */
+    
 }
 
-/* Remove border */
-.DepListContainer {
-    border: none;
-}
 
-.OthersContainer
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 28vw;
-    height: 56.5vw;
-    margin-top:1.2vw;
-    border: 1px solid black;
-    gap :0.1vw;
 
-}
+
+
 
 .AddRow
 {
@@ -112,9 +100,168 @@
    
 }
 
+.OthersContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 27vw;
+    height: 56.5vw;
+    margin-top:1.2vw;
+    
+   
+
+}
+.ProfileRectangle
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.1vw;
+    width: 26vw;
+    height:15.5vw;
+    
+}
+.RectangleBackground {
+    margin-top: -0.2vw;
+    width: 25vw;
+    height: 15vw;
+    position: relative; 
+}
+
+.titleProfile {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    position: absolute; 
+    top: 0.6vw; 
+    right:19.5vw ; 
+    z-index: 1;
+}
+
+.EditIcon {
+    width: 1.5vw;
+    height: auto;
+    position: absolute; 
+    top: 2.2vw; 
+    right:5vw; 
+    z-index: 1; 
+}
 
 
+.PhotoProfile
+{
 
+    width: 7vw;
+    height: 7vw;
+    border-radius:25vw;
+    margin-top: -12.7vw; 
+    z-index: 1;
+    
+   
+}
+.AdmName
+{
+   
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    margin-top: 0vw;
+    z-index: 1;
+}
+.AdmEmail
+{
+    font-size: 1vw;
+    margin-top: -2.2vw;
+    z-index: 1;
+}
+
+
+.CalendarRectangle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+    width: 26vw;
+    height:20vw;
+  
+    margin-top: 0.3vw;
+    position: relative;
+
+}
+.BigRectangleBackground
+{
+    width: 25vw;
+    height:19.5vw;
+}
+
+.Calendar
+{
+    z-index: 2;
+    position: absolute;
+    margin-top: 5vw;
+    width: 24vw;
+    height: 17vw;
+    font-size: 1.2vw;
+    color: #082A3E;
+    top: -3vw;
+    
+}
+.titleEmployee{
+    text-align: center;
+    font-size: 1.2vw;
+    font-family: 'Arame-Mono';
+    color: black;
+    position: absolute; 
+    width: 15vw;
+    top: 1vw; 
+    left: 0vw; 
+    z-index: 1;
+}
+.EmployeeList
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 21vw;
+    height: 15vw;
+    margin-top: 3vw;
+    margin-left: 2vw;
+    gap: 1vw;
+    position: absolute;
+    z-index: 1;
+   
+}
+.EmployeeRow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25vw;
+    height: 3.5vw;
+    gap: 1vw;
+    margin-top: 0.5vw;
+
+}
+.EmployeeLstImg
+{
+    width: 4vw;
+    height: 4vw;
+}
+
+.EmployeeLstName
+{
+    font-size: 1.1vw;
+    color: black;
+    
+}
 
 
 
