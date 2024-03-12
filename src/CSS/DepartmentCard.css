@@ -3,12 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15.5vw; 
-    height: 22vw;
+    width: 18.5vw; 
+    height: 25vw;
     background-color:transparent;
     flex-direction: column;
-    transform: scale(0.5);
-   
+    transform: scale(0.6);
     
 }
 
