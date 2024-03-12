@@ -9,6 +9,8 @@ import SquareIcon from '../Imagini/ProjectsIcon.png';
 import NotificationIcon from '../Imagini/NotificationIcon.png';
 import TeamIcon from '../Imagini/DepartmentsIcon.png';
 import UserIcon from '../Imagini/UserIcon.png';
+import { IoMdExit } from "react-icons/io";
+
 
 import {Link, useLocation } from 'react-router-dom';
 
@@ -34,7 +36,7 @@ return (
       </li>
 
       <li className={location.pathname === '/projects' ? 'active' : ''}>
-            <a href="/admin">
+            <a href="/projects">
                     <img src={SquareIcon} alt='/projects' className="MenuIcons" />
                 </a>
             <span className='tooltip'>projects</span>

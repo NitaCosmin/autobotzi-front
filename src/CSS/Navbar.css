@@ -37,7 +37,7 @@ img{
     display: flex; /* Utilizarea flexbox */
     align-items: center; /* Așezați elementele pe axa orizontală */
     padding: 0.4vw;
-
+    color: #339EB1;
 }
 
 #navbar li.active .tooltip {
