@@ -1,6 +1,62 @@
-.Container {
+.workspaceProjects {
+    user-select: none;
     height: 100vh;
     width: 100vw;
-    position: absolute; 
     background-color: #048097; 
+}
+
+.headerProjects{
+
+    user-select: none;
+    position: relative; 
+    top: 2%;
+    left: 11%;
+    height: 4vw;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;  
+    background-color: red;
+
+}
+
+.namePageProject {
+    width: 20%;
+    height: 100%;
+    background-color: #ECFCFF; 
+    border-radius: 1.2vw;
+    align-items: center;
+    display: flex; /* Adaugă flexbox */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+    flex-direction: column; /* Așază conținutul pe verticală */
+}
+
+.titleProjects {
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Arame-Mono';
+    color: #082A3E;
+}
+
+.addProjects {
+    width: 5%;
+    height: 100%;
+    background-color: #ECFCFF; 
+    border-radius: 5vw;
+    display: flex;
+    align-items: center; /* Aliniază conținutul pe verticală */
+    justify-content: center; /* Aliniază conținutul pe orizontală */
+}
+
+svg {
+
+    color: #082A3E;
+    width: 3.5vw; /* Lățimea SVG-ului */
+    height: 3.5vw; /* Înălțimea SVG-ului se ajustează automat */
+}
+
+
+
+@font-face {
+    font-family: 'Arame-Mono';
+    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
 }

@@ -28,7 +28,7 @@
 
 #navbar li a {
     display: flex; /* Utilizarea flexbox */
-    padding: 0.3vw;
+    padding: 0.1vw;
 }
 
 img{
@@ -43,6 +43,7 @@ img{
 #navbar li.active .tooltip {
     opacity: 1;
     transform:  translateY(2%);
+    
 }
 
 .tooltip{
