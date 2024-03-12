@@ -24,7 +24,7 @@ const Admin = () => {
       <div className="DepList">
       <div className="AddRow">
       <div className="namePageDep"><p className="titleDep">Departments</p></div>
-                <div className="addDep"><Link><MdAdd/></Link></div>
+                <div className="addDep"><Link className="addDep"><MdAdd /></Link></div>
       </div>
       <div className="DepListContainer">
       

@@ -28,7 +28,8 @@ const DepartmentCard = () => {
           </div>
         </div>
         <div className="expendbutton">
-            <Button label=">" />
+          <Button label=">" />
+
         </div>
       </div>
       
