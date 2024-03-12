@@ -21,7 +21,7 @@ const SignUp = () => {
           <img src={Ellipse} alt="" className="Ellipse2-STYLE-SingUp" />
           <div className="NameLabel-SingUp">Team Finder</div>
           <div className="ChoiceLabel-SingUp">Sign/Up</div>
-          <button type="submit" class="button-SignUp">Submit</button>
+          <button type="submit" className="button-SignUp">Submit</button>
           <div className="Collumn-Input-SingUp">
           <input type="text" className="textbox-SingUp" id="name" name="name" placeholder="Name" required/>
           <input type="email" className="textbox-SingUp" id="email" name="email" placeholder="E mail" required/>

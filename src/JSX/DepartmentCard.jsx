@@ -1,43 +1,44 @@
 import React, { useState } from "react";
-import { Calendar } from 'primereact/calendar';
-import "../CSS/Admin.css";
-import "../CSS/Calendar.css";
-import MenuBar from '../WhiteMenu/MenuBarWhite.png';
-import ExitIcon from '../Imagini/ExitIcon.png';
-import HomeIcon from '../Imagini/HomeIcon.png';
-import SquareIcon from '../Imagini/ProjectsIcon.png';
-import NotificationIcon from '../Imagini/NotificationIcon.png';
-import TeamIcon from '../Imagini/DepartmentsIcon.png';
-import UserIcon from '../Imagini/UserIcon.png';
-import RoboImg from '../WhiteMenu/RoboImgWhite.png';
-import CalendarBackground from '../WhiteMenu/CalendarBackgroundWhite.png';
-import AddBackground from '../WhiteMenu/AddBackgroundWhite.png';
-import SearchBackground from '../WhiteMenu/SearchBackgroundWhite.png';
-import { ListBox } from 'primereact/listbox';
-import {Link, useLocation } from 'react-router-dom';
-import Navbar from "../JSX/Navbar";
-
+import "../CSS/DepartmentCard.css";
+import DepartmentCardBackground from "../DepartmentCard-images/DepartmentCardBeckground.png";
+import DepProfileImage from "../DepartmentCard-images/DepProfileImage.png";
+import { Button } from 'primereact/button';
 
 const DepartmentCard = () => {
     
   
   return (  
-     
-    <div className="AdminContainer">
-    <Navbar/>
-    <div className="Spacework1 disable-selection ">
-        
-    </div>
-    <div className="Spacework2 ">
-        
-          
-    
+   
+    <div className="DepCardContainer">
+      <img src={DepartmentCardBackground} alt="" className="DepBeckgroundCard-Style" />
+      <div className="DepCardContent">
+        <img src={DepProfileImage} alt="" className="DepImg-Style" />
+        <div className="DepCardFields">
+          <div className="FildGap">
+            <div className="FieldContentLabel">Desing</div>
+            <div className="FieldNameLabel">Department Name</div>
+          </div>
+          <div className="FildGap">
+            <div className="FieldContentLabel">Dorel</div>
+            <div className="FieldNameLabel">Department Manager</div>
+          </div>
+          <div className="FildGap">
+            <div className="FieldContentLabel">15</div>
+            <div className="FieldNameLabel">Members</div>
+          </div>
+        </div>
+        <div className="expendbutton">
+            <Button label=">" />
+        </div>
+      </div>
+      
 
     </div>
-    <div className="MenuBar"></div>
-  
-         
-    </div>
+    
+    
+    
+        
+    
      
     
   );
