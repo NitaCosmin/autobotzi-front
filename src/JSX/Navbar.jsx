@@ -28,9 +28,9 @@ return (
      <div className='sidebar'>   
       <ul id='navbar'>
 
-      <li className={location.pathname === '/admin' ? 'active' : ''}>
-            <a href="/admin">
-                    <img src={HomeIcon} alt='/admin' className="MenuIcons" />
+      <li className={location.pathname === '/apphome' ? 'active' : ''}>
+            <a href="/apphome">
+                    <img src={HomeIcon} alt='/apphome' className="MenuIcons" />
                 </a>
             <span className='tooltip'>Home</span>
       </li>
@@ -51,7 +51,7 @@ return (
 
       <li className={location.pathname === '/admin' ? 'active' : ''}>
             <a href="/admin">
-                    <img src={TeamIcon} alt='/departments' className="MenuIcons" />
+                    <img src={TeamIcon} alt='/admin' className="MenuIcons" />
                 </a>
             <span className='tooltip'>departments</span>
       </li>

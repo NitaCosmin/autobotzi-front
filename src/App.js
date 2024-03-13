@@ -8,6 +8,7 @@ import Login from "./JSX/Login";
 import Admin from "./JSX/Admin";
 import Projects from "./JSX/Projects";
 import DepartmentCard from "./JSX/DepartmentCard";
+import AppHome from "./JSX/AppHome";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
          <Route path="/admin" element={<Admin />} />
          <Route path="/projects" element={<Projects />} />
          <Route path="/departments" element={<DepartmentCard />} />
+          <Route path="/apphome" element={<AppHome />} />
+
 
 
 
