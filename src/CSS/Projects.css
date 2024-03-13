@@ -4,6 +4,20 @@
     width: 100vw;
     background-color: #048097; 
 }
+.workspaceProjects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0.1vw, transparent 0.1vw);
+    background-size: 3vw 3vw; /* Adjust the size of the squares */
+    pointer-events: none;
+    z-index: 0;
+}
 
 .headerProjects{
 

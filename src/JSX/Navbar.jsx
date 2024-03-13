@@ -42,9 +42,9 @@ return (
             <span className='tooltip'>projects</span>
       </li>
 
-      <li className={location.pathname === '/user' ? 'active' : ''}>
-            <a href="/admin">
-                    <img src={UserIcon} alt='/user' className="MenuIcons" />
+      <li className={location.pathname === '/profile' ? 'active' : ''}>
+            <a href="/profile">
+                    <img src={UserIcon} alt='/profile' className="MenuIcons" />
                 </a>
             <span className='tooltip'>user</span>
       </li>
