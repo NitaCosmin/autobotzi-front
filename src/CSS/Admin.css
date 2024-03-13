@@ -35,23 +35,21 @@
     justify-content: flex-start;
     align-items: center;
     width: 59vw;
-    height: 95%; /* Fixed height */
+    height: 92%; /* Fixed height */
     margin-top: 1.2vw;
-    margin-left: 5vw;
-
+    margin-left: 9vw;
     gap:0.1vw;
 }
 
 
 .DepListContainer {
+    
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: flex-start;
     align-items: center;
     width: 59vw;
-    height: 87%; 
-    background-color: pink;
-   
+    height: 52vw; /* Fixed height */
     overflow-y: auto;
     gap: 1vw;
 
@@ -115,7 +113,7 @@
     align-items: center;
     flex-direction: column;
     width: 27vw;
-    height: 95%;
+    height: 56.5vw;
     margin-top:1.2vw;
     
    
