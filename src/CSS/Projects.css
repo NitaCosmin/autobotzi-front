@@ -241,3 +241,38 @@ svg {
     font-family: 'Arame-Mono';
     src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
 }
+
+
+/*Projects list Varianta*/
+
+.ProjectListContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    height: 52vw; /* Fixed height */
+    margin-left: 13vw;
+    margin-top: 3vw;
+    overflow-y: auto;
+    gap: 1vw;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #048097  #E5F3FE; /* For Firefox */
+}
+
+/* Webkit (Chrome, Safari, Edge) scrollbar customization */
+.ProjectListContainer::-webkit-scrollbar {
+    width: 3vw; /* Width of the scrollbar */
+}
+
+.ProjectListContainer::-webkit-scrollbar-track {
+    background-color: #E5F3FE; /* Color of the scrollbar track */
+   
+}
+
+.ProjectListContainer::-webkit-scrollbar-thumb {
+    background-color: #048097; /* Color of the scrollbar */
+    
+}
+
+

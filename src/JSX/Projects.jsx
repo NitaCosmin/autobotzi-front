@@ -3,6 +3,7 @@ import '../CSS/Projects.css';
 import { MdAdd } from "react-icons/md";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import ProjectCard from "../JSX/ProjectCard";
 
 
 
@@ -51,7 +52,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="myProjects">
+                {/* <div className="myProjects">
                     {projects.map((project, index) => (
                         <div key={index} className="project">
                             <div className="projectDetails">
@@ -65,7 +66,26 @@ const Projects = () => {
                             </div>
                         </div>
                     ))}
+                </div> */}
+                <div className="ProjectListContainer">
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
+                 <ProjectCard/>
                 </div>
+
+                
         </div>
 
     </div>

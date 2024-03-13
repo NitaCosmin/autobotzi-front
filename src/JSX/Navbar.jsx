@@ -56,9 +56,9 @@ return (
             <span className='tooltip'>departments</span>
       </li>
 
-      <li className={location.pathname === '/admin' ? 'active' : ''}>
-            <a href="/admin">
-                    <img src={NotificationIcon} alt='/message' className="MenuIcons" />
+      <li className={location.pathname === '/projectcard' ? 'active' : ''}>
+            <a href="/projectcard">
+                    <img src={NotificationIcon} alt='/projectcard' className="MenuIcons" />
                 </a>
             <span className='tooltip'>Message</span>
       </li>
