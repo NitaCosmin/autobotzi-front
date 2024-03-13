@@ -76,13 +76,7 @@ const Projects = () => {
                  <ProjectCard/>
                  <ProjectCard/>
                  <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
-                 <ProjectCard/>
+
                 </div>
 
                 

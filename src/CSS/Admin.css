@@ -29,14 +29,15 @@
 
 .DepList
 {
+    background-color: red;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: flex-start;
     align-items: center;
     width: 59vw;
-    height: 56.5vw; /* Fixed height */
+    height: 95%; /* Fixed height */
     margin-top: 1.2vw;
-    margin-left: 9vw;
+    margin-left: 5vw;
 
     gap:0.1vw;
 }
@@ -48,30 +49,18 @@
     justify-content: flex-start;
     align-items: center;
     width: 59vw;
-    height: 52vw; /* Fixed height */
+    height: 87%; 
+    background-color: pink;
    
     overflow-y: auto;
     gap: 1vw;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #048097  #E5F3FE; /* For Firefox */
+
 }
 
 /* Webkit (Chrome, Safari, Edge) scrollbar customization */
 .DepListContainer::-webkit-scrollbar {
-    width: 3vw; /* Width of the scrollbar */
+    width: 0vw; /* Width of the scrollbar */
 }
-
-.DepListContainer::-webkit-scrollbar-track {
-    background-color: #E5F3FE; /* Color of the scrollbar track */
-   
-}
-
-.DepListContainer::-webkit-scrollbar-thumb {
-    background-color: #048097; /* Color of the scrollbar */
-    
-}
-
-
 
 
 
@@ -119,13 +108,14 @@
 
 .OthersContainer
 {
+    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 27vw;
-    height: 56.5vw;
+    height: 95%;
     margin-top:1.2vw;
     
    

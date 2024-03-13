@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    width:53vw ;
+    width:51vw ;
     height: 3.9vw;
     gap:21.5vw;
    
@@ -70,11 +70,14 @@
 .DepInfoBackground
 {
     width: 55vw;
-    height: 18.5vw;
+    height: 30%;
+    border-radius: 3vw;
+
 }
 
 .AboutProjectBackground
 {
     width: 55vw;
-    height: 28vw;
+    height: 30%;
+    border-radius: 3vw;
 }

@@ -99,7 +99,7 @@ svg {
 .searchProject{
     height: 100%;
     width: 15vw;
-    margin-right: 10vw;
+    margin-right: 9vw;
 
 }
 
@@ -153,7 +153,7 @@ svg {
 
 
 .dropdownToggle {
-    margin-right: 10vw; /* Margin dreapta */
+    margin-right: 5vw; /* Margin dreapta */
     display: flex; /* Folosește flexbox pentru aliniere */
     justify-content: center; /* Aliniaza continutul pe orizontala */
     align-items: center; /* Aliniază conținutul pe verticală */
@@ -186,7 +186,6 @@ svg {
 .dropdownMenu {
   position: absolute;
   top: 100%;
-  left: 0;
   background-color: #ECFCFF;
   margin-top: 0.2vw;
   width: 15vw;
@@ -203,46 +202,6 @@ svg {
 }
 
 
-
-/* //////////////////////////////////////////////////////////////// */
-
-.myProjects{
-    background-color: rgb(35, 81, 67);
-    user-select: none;
-    position: relative; 
-    top: 5%;
-    left: 11%;
-    height: 86%;
-    width: 85%;
-    display: flex;
-    justify-content: space-between;  
-
-}
-
-.project{
-    background-color: rgb(110, 211, 181);
-    user-select: none;
-    position: relative; 
-    height: 80%;
-    width: 85%;
-    display: flex;
-    justify-content: space-between; 
-    z-index: 2;
-}
-.projectDetails{
-    background-color: #E5F3FE;
-    user-select: none;
-    position: relative; 
-    height: 20vw;
-    width: 30vw;
-    border-radius: 1.7vw;
-}
-@font-face {
-    font-family: 'Arame-Mono';
-    src: url('../../public/fonts/Arame-Mono.ttf') format('truetype');
-}
-
-
 /*Projects list Varianta*/
 
 .ProjectListContainer {
@@ -251,28 +210,13 @@ svg {
     justify-content: flex-start;
     align-items: center;
     width: 70vw;
-    height: 52vw; /* Fixed height */
+    height: 88%; /* Fixed height */
     margin-left: 13vw;
     margin-top: 3vw;
     overflow-y: auto;
     gap: 1vw;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #048097  #E5F3FE; /* For Firefox */
 }
 
-/* Webkit (Chrome, Safari, Edge) scrollbar customization */
 .ProjectListContainer::-webkit-scrollbar {
-    width: 3vw; /* Width of the scrollbar */
+    width: 0vw; /* Face scrollbar-ul invizibil pe Chrome și alte browsere bazate pe WebKit */
 }
-
-.ProjectListContainer::-webkit-scrollbar-track {
-    background-color: #E5F3FE; /* Color of the scrollbar track */
-   
-}
-
-.ProjectListContainer::-webkit-scrollbar-thumb {
-    background-color: #048097; /* Color of the scrollbar */
-    
-}
-
-
