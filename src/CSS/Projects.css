@@ -210,9 +210,10 @@ svg {
     justify-content: flex-start;
     align-items: center;
     width: 70vw;
-    height: 88%; /* Fixed height */
+    height: 86%; /* Fixed height */
     margin-left: 13vw;
     margin-top: 3vw;
+    width: 70%;
     overflow-y: auto;
     gap: 1vw;
 }

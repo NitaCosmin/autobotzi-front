@@ -49,15 +49,13 @@ const AppHome = () => {
         </div>
         
         <div className="CalendarRectangle">
-        <img src={BigRectangleBackground} alt="" className="BigRectangleBackground" />
         <div className="Calendar  ">
            <Calendar value={date} onChange={(e) => setDate(e.value)} inline showWeek />
            </div>
         </div>
        
-        <div className="CalendarRectangle">
-         <img src={BigRectangleBackground} alt="" className="BigRectangleBackground" />
-         <p className="titleEmployee">Employer List</p>
+        <div className="EmployeeListConntainer">
+         <div className="titleEmployee">Employer List</div>
          <div className="EmployeeList">
          <div className="EmployeeRow">
          <img src={PhotoProfile} alt="" className="EmployeeLstImg" />
