@@ -237,23 +237,25 @@
     left: 0vw; 
     z-index: 1;
 }
-.EmployeeList
-{
+.EmployeeList {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    height: 80%;
+    height: 78%;
     margin-top: 3.5vw;
     margin-left: 0vw;
     gap: 1.5vw;
     position: absolute;
     z-index: 1;
-   
+    overflow-y: auto; /* Adaugă un scrollbar vertical */
 }
-.EmployeeRow
-{
+.EmployeeList::-webkit-scrollbar {
+    width: 0vw; /* Width of the scrollbar */
+}
+
+.EmployeeRow {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -262,20 +264,17 @@
     width: 100%;
     gap: 1vw;
     margin-top: 0.5vw;
-
 }
-.EmployeeLstImg
-{
+
+.EmployeeLstImg {
     margin-left: 1vw;
     width: 3vw;
     height: 3vw;
 }
 
-.EmployeeLstName
-{
+.EmployeeLstName {
     font-size: 1.1vw;
     color: black;
-    
 }
 
 
