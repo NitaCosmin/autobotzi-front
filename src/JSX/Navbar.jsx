@@ -12,7 +12,7 @@ import UserIcon from '../Imagini/UserIcon.png';
 import { IoMdExit } from "react-icons/io";
 
 
-import {Link, useLocation } from 'react-router-dom';
+import {Link, useLocation,useNavigate } from 'react-router-dom';
 
 
 
@@ -20,7 +20,15 @@ import {Link, useLocation } from 'react-router-dom';
 
 function Navbar(){
 
-  const location = useLocation();
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    const handleLogout = () => {
+      // Clear the token from local storage
+      localStorage.removeItem("token");
+      // Redirect the user to the login page
+      navigate("/login");
+    };
 
 
 return (
@@ -63,9 +71,9 @@ return (
             <span className='tooltip'>Message</span>
       </li>
 
-      <li className={location.pathname === '/' ? 'active' : ''}>
-            <a href="/admin">
-                    <img src={ExitIcon} alt='/' className="MenuIcons" />
+      <li onClick={handleLogout} className={location.pathname === '' ? 'active' : ''}>
+            <a href="">
+                    <img src={ExitIcon} alt=''   className="MenuIcons" />
                 </a>
             <span className='tooltip'>Exit</span>
       </li>
