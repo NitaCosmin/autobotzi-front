@@ -35,7 +35,7 @@ const ProjectCard = () => {
 
         </div> 
         <p className="ProjectDate">25 Feb 2024</p>
-        <button class="image-button">
+        <button className="image-button">
             <img src={FavoriteButton} alt="" className="FavoriteButton" />
         </button>
 

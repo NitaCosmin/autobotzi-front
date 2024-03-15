@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Calendar } from 'primereact/calendar';
 import "../CSS/AppHome.css";
 import "../CSS/Admin.css";
@@ -12,11 +12,47 @@ import Navbar from "./Navbar";
 import { MdAdd } from "react-icons/md";
 import DepInfoBackground from "../Imagini/DepInfoBackground.png";
 import AboutProjectBackground from "../Imagini/AboutProjectBackground.png";
-
+import axios from 'axios'; 
 
 const AppHome = () => {
    
-    const [date, setDate] = useState(null);
+  const [date, setDate] = useState(null);
+  const [user, setUser] = useState({});
+
+    useEffect(() => {
+        const email = localStorage.getItem('email');
+        if (email) {
+            fetchUser(email);
+        } else {
+            console.error("No email found in localStorage.");
+        }
+    }, []);
+
+    const fetchUser = async (email) => {
+      try {
+          const token = localStorage.getItem('token');
+          if (!token) {
+              console.error("Token not found in localStorage.");
+              return;
+          }
+  
+          const response = await axios.get(`https://autobotzi-ccec90c77ecb.herokuapp.com/user/get-by-email?email=${email}`, {
+              headers: {
+                  Authorization: `Bearer ${token}`
+              }
+          });
+  
+          const userData = response.data;
+          if (userData && userData.name && userData.email) {
+              setUser(userData);
+          } else {
+              console.error("Invalid user data received:", userData);
+          }
+      } catch (error) {
+          console.error("Error fetching user data:", error);
+      }
+  };
+
     
   
   return (  
@@ -44,8 +80,12 @@ const AppHome = () => {
          <img src={EditIcon} alt="" className="EditIcon" />
          <p className="titleProfile">Profile</p>
          <img src={PhotoProfile} alt="" className="PhotoProfile" />
-         <p className="AdmName">Nume</p>
-         <p className="AdmEmail">exemplu@gmail.com</p>
+         {user && (
+                        <>
+                            <p className="AdmName">{user.name}</p>
+                            <p className="AdmEmail">{user.email}</p>
+                        </>
+                    )}
         </div>
         
         <div className="CalendarRectangle">
