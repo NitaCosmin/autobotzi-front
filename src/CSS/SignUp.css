@@ -131,7 +131,12 @@
 .textbox-SingUp:focus {
     outline: none; /* Remove default focus outline */
 }
-
+.SingUp
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Collumn-Input-SingUp {
     position: absolute; 
     z-index: 2;
@@ -141,6 +146,7 @@
     display: flex;
     flex-direction: column; /* Set the flex direction to column */
     justify-content: center;
+    align-items: center;
     gap:2.25vw;
 }
 
