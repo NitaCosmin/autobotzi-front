@@ -11,6 +11,8 @@ import DepartmentCard from "./JSX/DepartmentCard";
 import AppHome from "./JSX/AppHome";
 import Profile from "./JSX/Profile";
 import ProjectCard from "./JSX/ProjectCard";
+import Message from "./JSX/Message";
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path="/apphome" element={<AppHome />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/projectcard" element={<ProjectCard />} />
+          <Route path="/message" element={<Message />} />
+
 
 
 
