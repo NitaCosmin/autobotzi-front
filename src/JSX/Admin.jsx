@@ -15,15 +15,37 @@ import axios from 'axios'; // Import axios for making HTTP requests
 const Admin = () => {
   const [date, setDate] = useState(null);
   const [user, setUser] = useState({});
+  const [departments, setDepartments] = useState([]);
 
-    useEffect(() => {
-        const email = localStorage.getItem('email');
-        if (email) {
-            fetchUser(email);
-        } else {
-            console.error("No email found in localStorage.");
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                console.error("Token not found in localStorage.");
+                return;
+            }
+
+            const response = await axios.get('https://autobotzi-ccec90c77ecb.herokuapp.com/departments/all', {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            setDepartments(response.data);
+        } catch (error) {
+            console.error("Error fetching department data:", error);
         }
-    }, []);
+    };
+
+    fetchData();
+    const email = localStorage.getItem('email');
+    if (email) {
+        fetchUser(email);
+    } else {
+        console.error("No email found in localStorage.");
+    }
+}, []);
+
 
     const fetchUser = async (email) => {
       try {
@@ -60,18 +82,15 @@ const Admin = () => {
                     <div className="addDep"><Link className="addDep"><MdAdd /></Link></div>
                 </div>
                 <div className="DepListContainer">
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
-                    <DepartmentCard />
+                   {departments.map((department, index) => (
+            <DepartmentCard
+              key={index}
+              name={department.name}
+              manager={department.departmentManager}
+              description={department.description}
+            />
+          ))}
+         
                    
                 </div>
             </div>
