@@ -161,8 +161,11 @@
     color: white;
     padding: 0vw;
     overflow: auto; 
+    border-radius: 1vw;
     
 }
+
+
 
 .textbox-Login::placeholder {
     color: white; 
