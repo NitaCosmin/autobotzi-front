@@ -26,12 +26,11 @@
 
 .ProfileItems
 {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
     width: 59vw;
-    height: 56.5vw; 
+    height: 96%; 
     margin-top: 1.2vw;
     margin-left: 7vw;
     gap:0.1vw;
@@ -39,18 +38,19 @@
 }
 .ProfileRow
 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 59vw;
     flex-direction: row;
-    height: 26vw;
+    height: 18vw;
     gap: 0vw;
    
 }
 .ProfileBkg{
     width: 58vw;
-    height: auto;
+    height: 99%;
     z-index: 1;
 }
 .ProfileCollumn
@@ -60,7 +60,7 @@
     align-items: center;
     width: 25vw;
     flex-direction: column;
-    height: 25vw;
+    height: 22vw;
     gap: 0vw;
     z-index: 2;
     position:absolute;
@@ -69,8 +69,8 @@
 }
 .PhotoProfile1
 {
-    width: 17vw;
-    height: 17vw;
+    width: 13vw;
+    height: 13vw;
     
     border-radius: 25vw;
 }
@@ -81,7 +81,7 @@
     align-items: flex-start;
     width: 34vw;
     flex-direction: column;
-    height: 25vw;
+    height: 20vw;
     gap: 0.1vw;
     margin: 0vw;
     padding: 0vw;
@@ -97,8 +97,7 @@
     z-index: 2;
     font-size: 1.6vw;
     font-family: 'Arame-Mono';
-    color: black;
-    
+    color: black;    
     margin-bottom: -1vw;
    
 }
@@ -143,7 +142,7 @@
     align-items: center;
     width: 59vw;
     flex-direction: row;
-    height: 31vw;
+    height: 29vw;
     gap: 0vw;
    
 }
@@ -155,7 +154,7 @@
     align-items: center;
     width: 34vw;
     flex-direction: column;
-    height: 31vw;
+    height: 29vw;
     gap: 0vw;
    
     z-index: 1;
@@ -179,7 +178,7 @@
 .SkillsBkg
 {
     width: 24vw;
-    height: 19vw;
+    height: 17vw;
 }
 
 .AboutExp{
